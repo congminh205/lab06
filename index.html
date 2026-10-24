@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An accessible introduction to basic HTML5 content elements, including headings, lists, tables, links and images.">
+  <title>HTML5 Basic Content Elements</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <h1>HTML5 Basic Content Elements</h1>
+    <p>A simple guide to common HTML elements and page structure.</p>
+  </header>
+
+  <nav aria-label="Main navigation" class="site-nav">
+    <ul>
+      <li><a href="#headings">Headings and paragraphs</a></li>
+      <li><a href="#special-characters">Special characters</a></li>
+      <li><a href="#lists">Lists</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#images">Images</a></li>
+      <li><a href="#hyperlinks">Hyperlinks</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content" class="content">
+    <aside class="note" aria-label="Page note">
+      <h2>About this page</h2>
+      <p>CSS can make an HTML page easier to read and navigate.</p>
+      <p>This page also demonstrates semantic HTML, accessible links, and responsive layout.</p>
+    </aside>
+
+    <section id="headings">
+      <h2>Headings and paragraphs</h2>
+      <p>Headings and paragraphs are block-level elements. Headings create a logical outline that helps people understand the page.</p>
+      <h3>Headings</h3>
+      <p>HTML has six heading levels. Use them in a logical order. If you want to change a heading's appearance, use CSS rather than choosing a heading level only for its size.</p>
+      <h3>Paragraphs</h3>
+      <p>Paragraphs contain related body text. They should not contain other block-level elements.</p>
+    </section>
+
+    <section id="special-characters">
+      <h2>Special characters</h2>
+      <p>HTML supports named character references and numeric references. Examples include <span class="special">&reg;</span>, quotation marks (&quot;), an ampersand (&amp;), and the less-than (&lt;) and greater-than (&gt;) symbols.</p>
+    </section>
+
+    <section id="lists">
+      <h2>Lists</h2>
+      <p>HTML supports unordered lists, ordered lists, and description lists.</p>
+      <h3>Unordered list</h3>
+      <ul>
+        <li>First bullet point</li>
+        <li>Second bullet point</li>
+        <li>Third bullet point</li>
+      </ul>
+      <h3>Ordered list</h3>
+      <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+      <h3>Description list</h3>
+      <dl>
+        <dt>First term</dt>
+        <dd>A description of the first term.</dd>
+        <dt>Second term</dt>
+        <dd>A description of the second term.</dd>
+      </dl>
+      <h3>Nested list</h3>
+      <ol>
+        <li>First item</li>
+        <li>Second item
+          <ul>
+            <li>First sub-item</li>
+            <li>Second sub-item</li>
+            <li>Third sub-item</li>
+          </ul>
+        </li>
+        <li>Third item</li>
+      </ol>
+    </section>
+
+    <section id="tables">
+      <h2>Tables</h2>
+      <p>The following table presents an example of monthly savings.</p>
+      <div class="table-wrapper" role="region" aria-label="Monthly savings table" tabindex="0">
+        <table>
+          <caption>Monthly savings</caption>
+          <thead>
+            <tr>
+              <th scope="col">Month</th>
+              <th scope="col">Salary</th>
+              <th scope="col">Interest</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">January</th><td>$60</td><td>$40</td><td>$100</td></tr>
+            <tr><th scope="row">February</th><td>$40</td><td>$40</td><td>$80</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><th scope="row" colspan="3">Grand total</th><td>$180</td></tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <section id="hyperlinks">
+      <h2>Hyperlinks</h2>
+      <p>Visit the <a href="https://ilearn.swin.edu.au/" target="_blank" rel="noopener noreferrer">Swinburne learning platform (opens in a new tab)</a>.</p>
+      <p>Use this link to return to the <a href="#lists">Lists section</a> of this page.</p>
+      <p>For this example, email links can be written as <a href="mailto:someone@swin.edu.au">email someone at Swinburne</a>.</p>
+    </section>
+
+    <section id="images">
+      <h2>Images</h2>
+      <figure>
+        <a href="images/mycat.jpg" aria-label="Open the larger photo of my cat">
+          <img src="images/mycat_small.jpg" alt="A small preview photograph of my cat" width="150" height="150">
+        </a>
+        <figcaption>Select the image to open the larger photograph of my cat.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>COS10011 / COS60004 / COS60007</p>
+    <p> Swinburne University of Technology. Educational demonstration page.</p>
+    <p>Week 06: Web accessibility and ethics</p>
+  </footer>
+</body>
+</html>
